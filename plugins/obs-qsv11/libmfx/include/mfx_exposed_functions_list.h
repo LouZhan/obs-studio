@@ -140,3 +140,13 @@ FUNCTION(mfxStatus, MFXVideoPAK_ProcessFrameAsync, (mfxSession session, mfxPAKIn
 FUNCTION(mfxStatus, MFXDoWork, (mfxSession session), (session))
 
 #undef API_VERSION
+
+#define API_VERSION {{19, 1}}
+
+//
+// API version 1.19 functions
+//
+
+FUNCTION(mfxStatus, MFXVideoCORE_QueryPlatform, (mfxSession session, mfxPlatform* platform), (session, platform))
+
+#undef API_VERSION
